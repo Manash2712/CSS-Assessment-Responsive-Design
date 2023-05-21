@@ -1,0 +1,72 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    padding: 2%;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-left {
+    background-color: rgb(27, 74, 177);
+    width: 20%;
+    /* height: 50px; */
+}
+
+.nav-right {
+    width: 78%;
+    background-color: grey;
+    margin-left: 2%;
+}
+
+.main-top {
+    height: 40%;
+    background-color: green;
+    margin-top: 2%;
+    /* margin-right: 4%; */
+}
+
+.main-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    height: 40%;
+}
+.cards {
+    /* height: 200px; */
+    width: 32%;
+    background: #000;
+}
+
+footer {
+    height: 30%;
+    margin-top: 2%;
+}
+
+footer > div {
+    width: 100%;
+    height: 90%;
+    background-color: aqua;
+    margin-bottom: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-bottom {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 50%;
+    }
+    .cards {
+        height: 30%;
+        width: 100%;
+    }
+}
